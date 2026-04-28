@@ -30,9 +30,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [buildalon-windows]
+        os: [windows-latest]
         include:
-          - os: buildalon-windows
+          - os: windows-latest
             build-target: StandaloneWindows64
             build-args: ''
     steps:
